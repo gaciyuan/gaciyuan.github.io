@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+
+    <title>产品功能|山东伽次元科技有限责任公司</title>
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/anim.css" rel="stylesheet"/>
+    <link href="css/css.css" rel="stylesheet"/>
+	
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.superslide.2.1.1.js">//pc导航</script>
+    <script src="js/public.js">//导航</script>
+    <script src="js/anim.js">//动画</script>
+	
+</head>
+
+<body>
+<header class="header-v1">
+    <!-- S top-main -->
+    <div class="top-main">
+        <div class="logo1"><a href="index.html"><img src="picture/logo.png" alt=""/></a></div>
+		<a href="#" class="languages"><img src="picture/top_pic2.png" alt=""/></a>
+
+
+        <div class="top_search"><em></em>
+
+            <div class="search_con">
+                <form onSubmit="return checktop(this);" action="#" method="get" name="search"  id="form3">
+                <input class="input1" name="title" value="Search" onFocus="if(value=='Search'){value=''}" onBlur="if(value==''){value='Search'}">
+                <input name="c" type="hidden" value="Index">
+                <input name="a" type="hidden" value="Search">
+                <input type="submit" class="bnts"  value="">
+                </form>
+                <script type="text/javascript">
+                    function checktop(nForm){
+                        if(nForm.title.value=="Search")
+                        {   alert("请填写搜索关键字!");
+                            nForm.title.focus();
+                            return false;
+                        }
+                    }
+                    function checktop_en(nForm){
+                        if(nForm.title.value=="Search")
+                        {   alert("Please fill in the search keywords");
+                            nForm.title.focus();
+                            return false;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="top-main-content"><!-- S nav -->
+            <div class="navBar">
+                <ul class="nav clearfix">
+                    <li id="m1" class="m"><h3><a href="index.html" title="首页">首页</a></h3></li>
+                    <li id="m2" class="m "><h3><a href="QiYeJianJie.html" title="关于我们">关于我们</a></h3>
+                        <div class="sub" style="display:none">
+                            <dl>
+                                <dd><a href="QiYeJianJie.html">企业简介</a></dd>
+								<dd><a href="ZhaoXianNaShi.html">招贤纳士</a></dd>
+							</dl>
+                        </div>
+                    </li><li id="m4" class="m "><h3><a href="news.html" title="资讯中心">资讯中心</a></h3>
+                        
+                    </li><li id="m5" class="m "><h3><a href="YanFaZhongXin.html" title="研发中心">研发中心</a></h3>
+                        
+                    </li><li id="m6" class="m on"><h3><a href="Chanpingongneng.html" title="产品功能">产品功能</a></h3>
+                        <div class="sub" >
+                            <dl></dl>
+                        </div>
+                    </li><li id="m7" class="m"><h3><a href="LianXiWoMen.html" title="联系我们">联系我们</a></h3>
+                        <div class="sub" >
+                            <dl></dl>
+                        </div>
+                    </li>
+				</ul>
+            </div>
+            <script type="text/javascript"> jQuery(".nav").slide({
+                type: "menu",
+                titCell: ".m",
+                targetCell: ".sub",
+                effect: "slideDown",
+                delayTime: 300,
+                triggerTime: 100,
+                returnDefault: true
+            });</script>
+            <!-- E nav-->
+    	</div>
+    </div>
+    <!-- E top-main -->
+    <div class="c_l"></div>
+</header>
+
+<!-- S touch-top-wrapper -->
+<div class="touch-top">
+    <div class="touch-top-wrapper clearfix">
+        <div class="touch-logo" skinobjectzone="HtmlLogo_1514"><a class="" href="index.html"><img src="picture/logo.png" alt="全彩照明"/></a></div>
+        <!-- S touch-navigation -->
+        <div class="touch-navigation">
+            <div class="touch-toggle">
+                <ul>
+                    <li class="touch-toggle-item-last"><a href="javascript:void(0);" class="drawer-menu"
+                                                          data-drawer="search_div"><i
+                            class="touch-icon-search"><span>搜索</span></i></a></li>
+                    <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
+                                                          data-drawer="drawer-section-menu"><i
+                            class="touch-icon-menu"></i><span>导航</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- E touch-navigation --></div>
+    <!-- S touch-top -->
+    <div class="touch-toggle-content touch-top-home">
+        <!--手机搜索begin-->
+        <div class="drawer-section search_div">
+            <div class="search_con"><input name="names" type="text" class="input1" value="Search"
+                                           onFocus="if(value=='Search'){value=''}"
+                                           onBlur="if(value==''){value='Search'}"/><input type="submit" value=""
+                                                                                          class="bnt1"/>
+            </div>
+        </div>
+        <!--手机搜索end-->
+        <!--手机菜单begin-->
+        <div class="drawer-section drawer-section-menu">
+            <div class="touch-menu" skinobjectzone="menu_2005">
+                <ul>
+                    <li><a href="index.html"><span>首页</span></a></li>
+                                        
+                    <li><a href="javascript:;"><span>关于我们</span><i class="touch-arrow-down"></i> </a> 
+                        <ul>  
+                            <li><a href="QiYeJianJie.html"><span>企业简介</span></a></li>
+							<li><a href="ZhaoXianNaShi.html"><span>招贤纳士</span></a></li>
+						</ul>
+                    </li>                    
+                                
+                    <li> <a href="javascript:;"><span>资讯中心</span><i class="touch-arrow-down"></i> </a> 
+                        
+                    </li>                    
+                    <li> <a href="javascript:;"><span>研发中心</span><i class="touch-arrow-down"></i> </a> 
+                        
+                    </li>                    
+                    <li><a href=""><span>产品功能</span> </a> 
+                        <ul></ul>
+                    </li>                    
+                    <li><a href=""><span>联系我们</span> </a> 
+                        <ul></ul>
+                    </li>                    
+                 	<li><a href="#" class="languages">EN</a>                 </li>
+                </ul>
+                <div class="closetitle"><img src="picture/nav_bg2.png"></div>
+            </div>
+        </div>
+        <!--手机菜单end-->
+
+    </div>
+    <!-- E touch-top -->
+</div>
+
+<div class="touch_bg">&nbsp;</div>
+<!-- E touch-top-wrapper -->
+<div class="blank_h">&nbsp;</div>
+<!--正文begin-->
+<div class="about_bg3">
+    <div class="about_t3  anim anim-1">产品功能</div>
+    <div class="case_ul anim anim-2">
+        <ul>
+            <li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\车辆列表.png" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>车辆列表功能</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/596747f854a8c.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;用户可直接通过车辆列表管理车辆，重命名等，所有车辆在线，离线状态一目了然，在线就是车辆在进行测试状态，离线就是车辆处于熄火状态，特殊车辆可特别关注。选中车辆点开之后可查看车辆详细信息。</p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>车辆列表功能</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li><li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\轨迹回放.png" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>轨迹回放储存</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/5967480a215f3.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;通过轨迹回放功能可以实现车辆全程轨迹回放，录像自动保存，停车10分钟会在地图显示自动停留点，方便企业统计车辆数据，企业也可通过输入时间来实现查看车辆位置，位置信息精确到秒。通过云存储技术，可防止数据丢失。云存储具有高可靠性、高扩展性并易于访问。云存储服务器通过互联网实现了远程访问，用户可以随时随地通过网络访问自己的数据，也为远程端监控提供了便利。</p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>轨迹回放储存</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li><li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\厂区地图1.jpg" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>厂区地图定制上传</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/59674831c07c9.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;可根据客户个性化需求可以独家定制地图，我们技术人员可以将卫星地图替换为客户公司建模地图，可更加详细浏览车辆位置信息，经过调试可达到和使用卫星地图同等标准，满足客户的需求。</p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>厂区地图定制上传</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li><li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\人工智能助手3.jpg" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>人工智能助手</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/5967483f13c1b.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;虚拟助手和语音助手（如Siri、Google Assistant）利用人工智能技术，回答驾驶员、并调动各传感器的感知信息，结合AI为用户进行工作分析，执行任务，并与用户进行自然语言交流，帮助驾驶员缓解工作疲劳感，提高工作效率。并且可为用户提供可靠的运维方案，帮助用户降低维护成本。通过人工智能也可降低作业风险。利用迦次元三现AI可视化系统可对作业的每一流程的风险系数进行评估分析，从而为操作人员提供更合适的作业方案，降低作业人员的风险系数。
+    
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>人工智能助手</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li><li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\大屏生产.png" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>大屏生产全流程显示</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/59674853c7a54.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;车辆生产进度，测试状态，以及生产线实时情况，全部云同步到大屏、PC端、手机APP端。使其生产及操作全过程透明化，数据可视化。以便企业通过全程可视化获得机械设备浪费的存在点，消除瓶颈 ,缩短交付时间，提高产能。</p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>大屏生产全流程显示</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li><li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\59326712c6242.jpg" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>数据分析</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/59674ac4a4246.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;为了方便企业统计车辆数据，我们专门研发的数据分析功能，包括里程统计，离线统计，停留统计，测试时间统计等，根据生产数据进行优化，将人工智能嵌入软件，自动配置生产参数，实现更高效的运营，对生产数据进行监测进行问题预警，优化工作流程，提高生产过程的效率和能源利用率，促进设备的节能减排，降低成本。
+</p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>数据分析</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li><li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\实时追踪.jpg" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>实时追踪</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/59674ad6cf678.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;基于GPS和RFID的实时追踪系统、车辆定位可精确到5米以内。通过我们系统的实时追踪功能，可查看车辆的实时位置，位置每2-5秒上传一次，也可查看车辆在哪个测试环节或装配环节，通过查看车辆离线在线状态可以知道车辆是否启动（点熄火监测），如果启动处于启动状态可以知道车辆动车时间也就是点火时间。</p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>实时追踪</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li><li>
+                    <div class="bg-list-img">
+                        <a href="javascript:void(0)"><img src="picture\天气预测.jpg" alt=""></a></div>
+                    <div class="bg-list-tit"><h4>天气预测显示</h4></div>
+                    <label class="bg-list-more"></label>
+
+                    <div class="i_pro_bg">
+                        <a href="javascript:void(0)">
+                            <div class="bg-list-hs" style=" background:url(images/59674aa856e5e.png) center top no-repeat;background-size:100% 100%"  >
+                                <div class="bg-list-sub-hs"  >
+                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;基于GPS、雷达的监测功能，向用户发送天气变化的实时通知，以便用户及时了解重要的气象信息，通过人工智能的数据计算，可以告知用户根恶劣天气对设备的影响，提前安排维护计划，降低设备故障的风险并且进行智能调度，降低能源消耗。</p>
+                                </div>
+                            </div>
+                            <div class="bg-list-yew">
+                                <h5>天气预测显示</h5>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+        </ul>
+    </div>
+    <div class="pages anim anim-3 yema" >
+        <div>  <span class="current">1</span><a class="num" href="#">2</a> <a class="next" href="#">>></a> </div>    </div>
+</div>
+<!--正文end-->
+
+<!--尾部begin-->
+
+<div class="foot_bg">
+    <div class="foot_con">
+        <div class="foot_con_l">
+            <img src="picture/logo2.png" class="foot_con_logo"/>
+
+            <div class="foot_con_a">
+                <a href="#">首页</a>&nbsp;｜&nbsp;
+                <a href="#">关于我们</a>&nbsp;｜&nbsp;<a href="#">资讯中心</a>&nbsp;｜&nbsp;<a href="#">研发中心</a>&nbsp;｜&nbsp;<a href="#">产品功能</a>&nbsp;｜&nbsp;<a href="#">联系我们</a>            </div>
+        </div>
+        <div class="foot_con_r">
+            <img src="picture/weixin.jpg"/>
+            <ul>
+                <li><a href="tel:400-xxxx-1238" class="tel">400-xxx-1238</a></li>
+                <li><a href="mailto:sales@xxxxx.com" class="email">sales@xxxxx.com</a></li>
+                <li>山东伽次元科技有限责任公司 Shandong Jiaciyuan Technology Co., Ltd</li>
+            </ul>
+        </div>
+        <div class="c_l"></div>
+    </div>
+    <div class="foot_bg2">
+        <div class="foot_con2">
+            技术支持
+            <div class="footer_fx_r">
+                <ul>
+                    <li class="foot_weixin"><a href="javascript:void(0)"><div class="ewm"><img src="picture/weixin.jpg"></div></a></li>
+                    <li class="foot_qq"><a href="#">&nbsp;</a></li>
+                    <li class="foot_weibo"><a href="javascript:void(0)" class="jiathis_button_tqq">&nbsp;</a></li>
+                    <li class="foot_sinna"><a href="javascript:void(0)" class="jiathis_button_tsina">&nbsp;</a></li>
+
+                </ul>
+            </div>
+            <script type="text/javascript" src="js/jia.js" charset="utf-8"></script>
+            <style>
+                .jiathis_style .jtico_tqq {
+                    background-position: -80px -64px;
+                }
+
+                .jiathis_style .jtico_tsina {
+                    background-position: -80px -64px;
+                }
+            </style>
+
+            <span class="r">分享到：</span>
+        </div>
+    </div>
+</div>
+<a href="javascript:void(0)" class="gotop" onClick="goTop()"></a>
+<!--尾部end-->
+<script language="javascript" src="js/foot.js"></script>
+<!--弹窗begin-->
+<div class="case_bgs">&nbsp;</div>
+<div class="case_tc">
+    <div class="case_divs">
+        <img src="picture/close.png" class="closed"/>
+        <img src="picture/i_pro_img1.jpg" alt="" id="tc_big"/>
+
+        
+    </div>
+</div>
+<script type="text/javascript">
+    $(".closed").click(function () {
+        $(".case_tc").animate({height: "0", top: "270px"});
+        $(".case_bgs").fadeOut();
+        $(".case_tc").fadeOut();
+
+    })
+    $(".case_ul ul li").click(function () {
+        $(".case_txt").find("h2").html($(this).find("h4").html());
+        $(".case_txt").find("p").html($(this).find("p").html());
+        $("#tc_big").attr("src", $(this).find("img").attr("src"))
+        $(".case_bgs").fadeIn();
+        $(".case_tc").fadeIn();
+        $(".case_tc").animate({
+            height: $(".case_tc").find("#tc_big").height() + $(".case_txt").height() + 50,
+            top: "170px"
+        });
+
+
+    })
+</script>
+<!--弹窗end-->
+</body>
+</html>
