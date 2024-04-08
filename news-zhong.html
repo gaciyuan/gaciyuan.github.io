@@ -1,275 +1,421 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
     <title>售中服务|山东伽次元科技有限责任公司</title>
-	<meta name="Keywords" content="" />
-	<meta name="Description" content="" />
-	
-    <link href="css/style.css" rel="stylesheet"/>
-    <link href="css/anim.css" rel="stylesheet"/>
-    <link href="css/css.css" rel="stylesheet"/>
-	
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/anim.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="js/jquery.superslide.2.1.1.js">//pc导航</script>
-    <script src="js/public.js">//导航</script>
-    <script src="js/anim.js">//动画</script>
-	
-</head>
+    <script type="text/javascript" src="js/jquery.superslide.2.1.1.js">
+      //pc导航
+    </script>
+    <script src="js/public.js">
+      //导航
+    </script>
+    <script src="js/anim.js">
+      //动画
+    </script>
+  </head>
 
-<body>
-<header class="header-v1">
-    <!-- S top-main -->
-    <div class="top-main">
-        <div class="logo1"><a href="index.html"><img src="picture/logo.png" alt=""/></a></div>
-		<a href="#" class="languages"><img src="picture/top_pic2.png" alt=""/></a>
-
-
-        <div class="top_search"><em></em>
-
-            <div class="search_con">
-                <form onSubmit="return checktop(this);" action="#" method="get" name="search"  id="form3">
-                <input class="input1" name="title" value="Search" onFocus="if(value=='Search'){value=''}" onBlur="if(value==''){value='Search'}">
-                <input name="c" type="hidden" value="Index">
-                <input name="a" type="hidden" value="Search">
-                <input type="submit" class="bnts"  value="">
-                </form>
-                <script type="text/javascript">
-                    function checktop(nForm){
-                        if(nForm.title.value=="Search")
-                        {   alert("请填写搜索关键字!");
-                            nForm.title.focus();
-                            return false;
-                        }
-                    }
-                    function checktop_en(nForm){
-                        if(nForm.title.value=="Search")
-                        {   alert("Please fill in the search keywords");
-                            nForm.title.focus();
-                            return false;
-                        }
-                    }
-                </script>
-            </div>
+  <body>
+    <header class="header-v1">
+      <!-- S top-main -->
+      <div class="top-main">
+        <div class="logo1">
+          <a href="index.html"><img src="picture/logo.png" alt="" /></a>
         </div>
-        <div class="top-main-content"><!-- S nav -->
-            <div class="navBar">
-                <ul class="nav clearfix">
-                    <li id="m1" class="m"><h3><a href="index.html" title="首页">首页</a></h3></li>
-                    <li id="m2" class="m "><h3><a href="QiYeJianJie.html" title="关于我们">关于我们</a></h3>
-                        <div class="sub" style="display:none">
-                            <dl>
-                                <dd><a href="QiYeJianJie.html">企业简介</a></dd>
-								<dd><a href="ZhaoXianNaShi.html">招贤纳士</a></dd>
-							</dl>
-                        </div>
-                    </li><li id="m4" class="m on"><h3><a href="news.html" title="资讯中心">资讯中心</a></h3>
-                        
-                    </li><li id="m5" class="m "><h3><a href="YanFaZhongXin.html" title="研发中心">研发中心</a></h3>
-                        
-                    </li><li id="m6" class="m "><h3><a href="Chanpingongneng.html" title="产品功能">产品功能</a></h3>
-                        <div class="sub" >
-                            <dl></dl>
-                        </div>
-                    </li><li id="m7" class="m"><h3><a href="LianXiWoMen.html" title="联系我们">联系我们</a></h3>
-                        <div class="sub" >
-                            <dl></dl>
-                        </div>
-                    </li>
-				</ul>
-            </div>
-            <script type="text/javascript"> jQuery(".nav").slide({
-                type: "menu",
-                titCell: ".m",
-                targetCell: ".sub",
-                effect: "slideDown",
-                delayTime: 300,
-                triggerTime: 100,
-                returnDefault: true
-            });</script>
-            <!-- E nav-->
-    	</div>
-    </div>
-    <!-- E top-main -->
-    <div class="c_l"></div>
-</header>
+        <a href="#" class="languages"
+          ><img src="picture/top_pic2.png" alt=""
+        /></a>
 
-<!-- S touch-top-wrapper -->
-<div class="touch-top">
-    <div class="touch-top-wrapper clearfix">
-        <div class="touch-logo" skinobjectzone="HtmlLogo_1514"><a class="" href="index.html"><img src="picture/logo.png" alt="全彩照明"/></a></div>
+        <div class="top_search">
+          <em></em>
+
+          <div class="search_con">
+            <form
+              onSubmit="return checktop(this);"
+              action="#"
+              method="get"
+              name="search"
+              id="form3"
+            >
+              <input
+                class="input1"
+                name="title"
+                value="Search"
+                onFocus="if(value=='Search'){value=''}"
+                onBlur="if(value==''){value='Search'}"
+              />
+              <input name="c" type="hidden" value="Index" />
+              <input name="a" type="hidden" value="Search" />
+              <input type="submit" class="bnts" value="" />
+            </form>
+            <script type="text/javascript">
+              function checktop(nForm) {
+                if (nForm.title.value == "Search") {
+                  alert("请填写搜索关键字!");
+                  nForm.title.focus();
+                  return false;
+                }
+              }
+              function checktop_en(nForm) {
+                if (nForm.title.value == "Search") {
+                  alert("Please fill in the search keywords");
+                  nForm.title.focus();
+                  return false;
+                }
+              }
+            </script>
+          </div>
+        </div>
+        <div class="top-main-content">
+          <!-- S nav -->
+          <div class="navBar">
+            <ul class="nav clearfix">
+              <li id="m1" class="m">
+                <h3><a href="index.html" title="首页">首页</a></h3>
+              </li>
+              <li id="m2" class="m">
+                <h3>
+                  <a href="QiYeJianJie.html" title="关于我们">关于我们</a>
+                </h3>
+                <div class="sub" style="display: none">
+                  <dl>
+                    <dd><a href="QiYeJianJie.html">企业简介</a></dd>
+                    <dd><a href="ZhaoXianNaShi.html">招贤纳士</a></dd>
+                  </dl>
+                </div>
+              </li>
+              <li id="m4" class="m on">
+                <h3><a href="news.html" title="资讯中心">资讯中心</a></h3>
+              </li>
+              <li id="m5" class="m">
+                <h3>
+                  <a href="YanFaZhongXin.html" title="研发中心">研发中心</a>
+                </h3>
+              </li>
+              <li id="m6" class="m">
+                <h3>
+                  <a href="Chanpingongneng.html" title="产品功能">产品功能</a>
+                </h3>
+                <div class="sub">
+                  <dl></dl>
+                </div>
+              </li>
+              <li id="m7" class="m">
+                <h3>
+                  <a href="LianXiWoMen.html" title="联系我们">联系我们</a>
+                </h3>
+                <div class="sub">
+                  <dl></dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <script type="text/javascript">
+            jQuery(".nav").slide({
+              type: "menu",
+              titCell: ".m",
+              targetCell: ".sub",
+              effect: "slideDown",
+              delayTime: 300,
+              triggerTime: 100,
+              returnDefault: true,
+            });
+          </script>
+          <!-- E nav-->
+        </div>
+      </div>
+      <!-- E top-main -->
+      <div class="c_l"></div>
+    </header>
+
+    <!-- S touch-top-wrapper -->
+    <div class="touch-top">
+      <div class="touch-top-wrapper clearfix">
+        <div class="touch-logo" skinobjectzone="HtmlLogo_1514">
+          <a class="" href="index.html"><img src="picture/logo伽次元.jpg" /></a>
+        </div>
         <!-- S touch-navigation -->
         <div class="touch-navigation">
-            <div class="touch-toggle">
-                <ul>
-                    <li class="touch-toggle-item-last"><a href="javascript:void(0);" class="drawer-menu"
-                                                          data-drawer="search_div"><i
-                            class="touch-icon-search"><span>搜索</span></i></a></li>
-                    <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
-                                                          data-drawer="drawer-section-menu"><i
-                            class="touch-icon-menu"></i><span>导航</span></a></li>
-                </ul>
-            </div>
+          <div class="touch-toggle">
+            <ul>
+              <li class="touch-toggle-item-last">
+                <a
+                  href="javascript:void(0);"
+                  class="drawer-menu"
+                  data-drawer="search_div"
+                  ><i class="touch-icon-search"><span>搜索</span></i></a
+                >
+              </li>
+              <li class="touch-toggle-item-last">
+                <a
+                  href="javascript:;"
+                  class="drawer-menu"
+                  data-drawer="drawer-section-menu"
+                  ><i class="touch-icon-menu"></i><span>导航</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- E touch-navigation --></div>
-    <!-- S touch-top -->
-    <div class="touch-toggle-content touch-top-home">
+        <!-- E touch-navigation -->
+      </div>
+      <!-- S touch-top -->
+      <div class="touch-toggle-content touch-top-home">
         <!--手机搜索begin-->
         <div class="drawer-section search_div">
-            <div class="search_con"><input name="names" type="text" class="input1" value="Search"
-                                           onFocus="if(value=='Search'){value=''}"
-                                           onBlur="if(value==''){value='Search'}"/><input type="submit" value=""
-                                                                                          class="bnt1"/>
-            </div>
+          <div class="search_con">
+            <input
+              name="names"
+              type="text"
+              class="input1"
+              value="Search"
+              onFocus="if(value=='Search'){value=''}"
+              onBlur="if(value==''){value='Search'}"
+            /><input type="submit" value="" class="bnt1" />
+          </div>
         </div>
         <!--手机搜索end-->
         <!--手机菜单begin-->
         <div class="drawer-section drawer-section-menu">
-            <div class="touch-menu" skinobjectzone="menu_2005">
+          <div class="touch-menu" skinobjectzone="menu_2005">
+            <ul>
+              <li>
+                <a href="index.html"><span>首页</span></a>
+              </li>
+
+              <li>
+                <a href="javascript:;"
+                  ><span>关于我们</span><i class="touch-arrow-down"></i>
+                </a>
                 <ul>
-                    <li><a href="index.html"><span>首页</span></a></li>
-                                        
-                    <li><a href="javascript:;"><span>关于我们</span><i class="touch-arrow-down"></i> </a> 
-                        <ul>  
-                            <li><a href="QiYeJianJie.html"><span>企业简介</span></a></li>
-							<li><a href="ZhaoXianNaShi.html"><span>招贤纳士</span></a></li>
-						</ul>
-                    </li>                    
-                                  
-                    <li> <a href="javascript:;"><span>资讯中心</span><i class="touch-arrow-down"></i> </a> 
-                        
-                    </li>                    
-                    <li> <a href="javascript:;"><span>研发中心</span><i class="touch-arrow-down"></i> </a> 
-                        
-                    </li>                    
-                    <li><a href=""><span>产品功能</span> </a> 
-                        <ul></ul>
-                    </li>                    
-                    <li><a href=""><span>联系我们</span> </a> 
-                        <ul></ul>
-                    </li>                    
-                 	<li><a href="#" class="languages">EN</a>                 </li>
+                  <li>
+                    <a href="QiYeJianJie.html"><span>企业简介</span></a>
+                  </li>
+                  <li>
+                    <a href="ZhaoXianNaShi.html"><span>招贤纳士</span></a>
+                  </li>
                 </ul>
-                <div class="closetitle"><img src="picture/nav_bg2.png"></div>
-            </div>
+              </li>
+
+              <li>
+                <a href="javascript:;"
+                  ><span>资讯中心</span><i class="touch-arrow-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;"
+                  ><span>研发中心</span><i class="touch-arrow-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href=""><span>产品功能</span> </a>
+                <ul></ul>
+              </li>
+              <li>
+                <a href=""><span>联系我们</span> </a>
+                <ul></ul>
+              </li>
+            </ul>
+            <div class="closetitle"><img src="picture/nav_bg2.png" /></div>
+          </div>
         </div>
         <!--手机菜单end-->
-
+      </div>
+      <!-- E touch-top -->
     </div>
-    <!-- E touch-top -->
-</div>
 
-<div class="touch_bg">&nbsp;</div>
-<!-- E touch-top-wrapper -->
-<div class="blank_h">&nbsp;</div>
-<!--正文begin-->
-<div class="news_bg2">
-    <div class="wrap2">
+    <div class="touch_bg">&nbsp;</div>
+    <!-- E touch-top-wrapper -->
+    <div class="blank_h">&nbsp;</div>
+    <!--正文begin-->
+    <div class="news_bg2">
+      <div class="wrap2">
         <div class="news_t2 anim anim-1">服务中心</div>
         <div class="about_x anim anim-2">
-            <h1 class="show_t">售中管理</h1>
+          <h1 class="show_t">售中管理</h1>
 
-            <div class="con_line">浏览：394次&nbsp;&nbsp;&nbsp;&nbsp;发布日期： 2024-02-18</div>
-            <div class="con_id">
-               <center><p style="text-align: center"><img src="picture\售中2.jpg" title="news_img3.jpg"/></p></center><p><br/>&nbsp; &nbsp;&nbsp; &nbsp;售中服务的目标是为客户提供性能价格比最优且个性化的解决方案。针对客户的售中服务，主要体现为销售管理，个性化定制和装配。售中服务的主要目的是为客户企业提供卓越的享受感。
-                <br/>&nbsp; &nbsp;&nbsp; &nbsp;销售管理是以销售机会为主线，围绕着销售机会的产生、销售机会的销售控制和跟踪、合同签订、价值交付等一个完整销售周期而展开的。
-                <br/>&nbsp; &nbsp;&nbsp; &nbsp;个性化定制是针对不同厂商不同产品装配测试线的差异，利用我们RFID设备与GPS设备的灵活性的特点提供相应的装配流程和综合性解决方案。本项服务是以产品试用为基础的基本服务后的一种升级，关键在于让顾客感受到公司对产品使用者的细致关护。
-                <br/>&nbsp; &nbsp;&nbsp; &nbsp;个性化装配是指根据客户厂商自身条件量身打造相应装配线。该服务需要与企业级顾客形成深度合作，公司会委派专业的技术人员“上门服务”，进行实地的线上生产线，线下测试线考察，并与对方的技术人员进行沟通交流，以便充分的了解对方的生产信息，获取相关参数，做到信息完全。从而在协商中设计出真正适合厂商的完美方案。同时为其提供品质服务，利用本系统提升对方的产能和效率与行业竞争力，十分有利于产品忠诚度的培养。 
-                <br/>&nbsp; &nbsp;&nbsp; &nbsp;售中服务作为展示我们公司产品系统的试验场，也是最好的战场，由于在这个阶段公司会有实际的系统展示，所以系统特点展示会更加地充分。同时各种个性化服务的提供，无疑会优化系统的使用体验，为市场开拓夯实基础。
-                </p><p><br/></p><p><br/></p>            </div>
-            <div class="fenxiang">
-                <div class="bdsharebuttonbox" style="float:right;"><a href="#" class="bds_more" data-cmd="more"></a><a
-                        href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina"
-                                                                                           data-cmd="tsina"
-                                                                                           title="分享到新浪微博"></a><a
-                        href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin"
-                                                                                       data-cmd="weixin"
-                                                                                       title="分享到微信"></a><a href="#"
-                                                                                                            class="bds_fbook"
-                                                                                                            data-cmd="fbook"
-                                                                                                            title="分享到Facebook"></a><a
-                        href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a></div>
-                <script>window._bd_share_config = {
-                    "common": {
-                        "bdSnsKey": {},
-                        "bdText": "",
-                        "bdMini": "2",
-                        "bdMiniList": false,
-                        "bdPic": "",
-                        "bdStyle": "0",
-                        "bdSize": "24"
-                    }, "share": {}
-                };
-                with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
-                <span class="span">分享到：</span>
+          <div class="con_line">
+            浏览：394次&nbsp;&nbsp;&nbsp;&nbsp;发布日期： 2024-02-18
+          </div>
+          <div class="con_id">
+            <center>
+              <p style="text-align: center">
+                <img src="picture\售中2.jpg" title="news_img3.jpg" />
+              </p>
+            </center>
+            <p>
+              <br />&nbsp; &nbsp;&nbsp;
+              &nbsp;售中服务的目标是为客户提供性能价格比最优且个性化的解决方案。针对客户的售中服务，主要体现为销售管理，个性化定制和装配。售中服务的主要目的是为客户企业提供卓越的享受感。
+              <br />&nbsp; &nbsp;&nbsp;
+              &nbsp;销售管理是以销售机会为主线，围绕着销售机会的产生、销售机会的销售控制和跟踪、合同签订、价值交付等一个完整销售周期而展开的。
+              <br />&nbsp; &nbsp;&nbsp;
+              &nbsp;个性化定制是针对不同厂商不同产品装配测试线的差异，利用我们RFID设备与GPS设备的灵活性的特点提供相应的装配流程和综合性解决方案。本项服务是以产品试用为基础的基本服务后的一种升级，关键在于让顾客感受到公司对产品使用者的细致关护。
+              <br />&nbsp; &nbsp;&nbsp;
+              &nbsp;个性化装配是指根据客户厂商自身条件量身打造相应装配线。该服务需要与企业级顾客形成深度合作，公司会委派专业的技术人员“上门服务”，进行实地的线上生产线，线下测试线考察，并与对方的技术人员进行沟通交流，以便充分的了解对方的生产信息，获取相关参数，做到信息完全。从而在协商中设计出真正适合厂商的完美方案。同时为其提供品质服务，利用本系统提升对方的产能和效率与行业竞争力，十分有利于产品忠诚度的培养。
+              <br />&nbsp; &nbsp;&nbsp;
+              &nbsp;售中服务作为展示我们公司产品系统的试验场，也是最好的战场，由于在这个阶段公司会有实际的系统展示，所以系统特点展示会更加地充分。同时各种个性化服务的提供，无疑会优化系统的使用体验，为市场开拓夯实基础。
+            </p>
+            <p><br /></p>
+            <p><br /></p>
+          </div>
+          <div class="fenxiang">
+            <div class="bdsharebuttonbox" style="float: right">
+              <a href="#" class="bds_more" data-cmd="more"></a
+              ><a
+                href="#"
+                class="bds_qzone"
+                data-cmd="qzone"
+                title="分享到QQ空间"
+              ></a
+              ><a
+                href="#"
+                class="bds_tsina"
+                data-cmd="tsina"
+                title="分享到新浪微博"
+              ></a
+              ><a
+                href="#"
+                class="bds_tqq"
+                data-cmd="tqq"
+                title="分享到腾讯微博"
+              ></a
+              ><a
+                href="#"
+                class="bds_weixin"
+                data-cmd="weixin"
+                title="分享到微信"
+              ></a
+              ><a
+                href="#"
+                class="bds_fbook"
+                data-cmd="fbook"
+                title="分享到Facebook"
+              ></a
+              ><a
+                href="#"
+                class="bds_twi"
+                data-cmd="twi"
+                title="分享到Twitter"
+              ></a>
             </div>
-            <div class="prenext">
+            <script>
+              window._bd_share_config = {
+                common: {
+                  bdSnsKey: {},
+                  bdText: "",
+                  bdMini: "2",
+                  bdMiniList: false,
+                  bdPic: "",
+                  bdStyle: "0",
+                  bdSize: "24",
+                },
+                share: {},
+              };
+              with (document)
+                (0)[
+                  ((getElementsByTagName("head")[0] || body).appendChild(
+                    createElement("script")
+                  ).src =
+                    "http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=" +
+                    ~(-new Date() / 36e5))
+                ];
+            </script>
+            <span class="span">分享到：</span>
+          </div>
+          <div class="prenext">
+            <span class="l">
+              上一篇：<a href="#">焊割自动化解决方案</a> <br />
+              下一篇：<a href="#">高速焊接工艺</a>
+            </span>
 
-                <span class="l">
-                     上一篇：<a href="#">焊割自动化解决方案</a>                <br/>
-                下一篇：<a href="#">高速焊接工艺</a>                </span>
-
-                <a href="javascript:history.back()" class="goback">返回列表</a>
-            </div>
-
+            <a href="javascript:history.back()" class="goback">返回列表</a>
+          </div>
         </div>
-
+      </div>
     </div>
+    <!--正文end-->
 
-</div>
-<!--正文end-->
-
-<!--尾部begin-->
-<div class="foot_bg">
-    <div class="foot_con">
+    <!--尾部begin-->
+    <div class="foot_bg">
+      <div class="foot_con">
         <div class="foot_con_l">
-            <img src="picture/logo2.png" class="foot_con_logo"/>
+          <img src="picture/logo2.png" class="foot_con_logo" />
 
-            <div class="foot_con_a">
-                <a href="#">首页</a>&nbsp;｜&nbsp;
-                <a href="#">关于我们</a>&nbsp;｜&nbsp;<a href="#">资讯中心</a>&nbsp;｜&nbsp;<a href="#">研发中心</a>&nbsp;｜&nbsp;<a href="#">产品功能</a>&nbsp;｜&nbsp;<a href="#">联系我们</a>            </div>
+          <div class="foot_con_a">
+            <a href="#">首页</a>&nbsp;｜&nbsp;
+            <a href="#">关于我们</a>&nbsp;｜&nbsp;<a href="#">资讯中心</a
+            >&nbsp;｜&nbsp;<a href="#">研发中心</a>&nbsp;｜&nbsp;<a href="#"
+              >产品功能</a
+            >&nbsp;｜&nbsp;<a href="#">联系我们</a>
+          </div>
         </div>
         <div class="foot_con_r">
-            <img src="picture/weixin.jpg"/>
-            <ul>
-                <li><a href="tel:400-xxxx-1238" class="tel">400-xxx-1238</a></li>
-                <li><a href="mailto:sales@xxxxx.com" class="email">sales@xxxxx.com</a></li>
-                <li>山东伽次元科技有限责任公司 Shandong Jiaciyuan Technology Co., Ltd</li>
-            </ul>
+          <img src="picture/weixin.jpg" />
+          <ul>
+            <li><a href="tel:400-xxxx-1238" class="tel">400-xxx-1238</a></li>
+            <li>
+              <a href="mailto:sales@xxxxx.com" class="email">sales@xxxxx.com</a>
+            </li>
+            <li>
+              山东伽次元科技有限责任公司 Shandong Jiaciyuan Technology Co., Ltd
+            </li>
+          </ul>
         </div>
         <div class="c_l"></div>
-    </div>
-    <div class="foot_bg2">
+      </div>
+      <div class="foot_bg2">
         <div class="foot_con2">
-            技术支持
-            <div class="footer_fx_r">
-                <ul>
-                    <li class="foot_weixin"><a href="javascript:void(0)"><div class="ewm"><img src="picture/weixin.jpg"></div></a></li>
-                    <li class="foot_qq"><a href="#">&nbsp;</a></li>
-                    <li class="foot_weibo"><a href="javascript:void(0)" class="jiathis_button_tqq">&nbsp;</a></li>
-                    <li class="foot_sinna"><a href="javascript:void(0)" class="jiathis_button_tsina">&nbsp;</a></li>
+          技术支持
+          <div class="footer_fx_r">
+            <ul>
+              <li class="foot_weixin">
+                <a href="javascript:void(0)"
+                  ><div class="ewm"><img src="picture/weixin.jpg" /></div
+                ></a>
+              </li>
+              <li class="foot_qq"><a href="#">&nbsp;</a></li>
+              <li class="foot_weibo">
+                <a href="javascript:void(0)" class="jiathis_button_tqq"
+                  >&nbsp;</a
+                >
+              </li>
+              <li class="foot_sinna">
+                <a href="javascript:void(0)" class="jiathis_button_tsina"
+                  >&nbsp;</a
+                >
+              </li>
+            </ul>
+          </div>
+          <script
+            type="text/javascript"
+            src="js/jia.js"
+            charset="utf-8"
+          ></script>
+          <style>
+            .jiathis_style .jtico_tqq {
+              background-position: -80px -64px;
+            }
 
-                </ul>
-            </div>
-            <script type="text/javascript" src="js/jia.js" charset="utf-8"></script>
-            <style>
-                .jiathis_style .jtico_tqq {
-                    background-position: -80px -64px;
-                }
+            .jiathis_style .jtico_tsina {
+              background-position: -80px -64px;
+            }
+          </style>
 
-                .jiathis_style .jtico_tsina {
-                    background-position: -80px -64px;
-                }
-            </style>
-
-            <span class="r">分享到：</span>
+          <span class="r">分享到：</span>
         </div>
+      </div>
     </div>
-</div>
-<a href="javascript:void(0)" class="gotop" onClick="goTop()"></a>
-<!--尾部end-->
-<script language="javascript" src="js/foot.js"></script>
-</body>
+    <a href="javascript:void(0)" class="gotop" onClick="goTop()"></a>
+    <!--尾部end-->
+    <script language="javascript" src="js/foot.js"></script>
+  </body>
 </html>
