@@ -16,15 +16,39 @@
     <script type="text/javascript" src="js/jquery.superslide.2.1.1.js">//pc导航</script>
     <script src="js/public.js">//导航</script>
     <script src="js/anim.js">//动画</script>
-	
+	<script src="js/login.js">//登录</script>
 </head>
 
 <body>
+    <div class="cg-mask">
+        <div class="cg-mask-content">
+            <div class="login-box anim-show">
+                <img src="picture/close.png" class="login-close">
+                <div class="login-title">登录</div>
+                <div class="cg-form-item">
+                    <div class="cg-form-item-label">账号：</div>
+                    <input type="text" class="cg-form-item-input" placeholder="请输入账号">
+                </div>
+                <div class="login-warn">请输入正确的账号</div>
+                <div class="cg-form-item">
+                    <div class="cg-form-item-label">密码：</div>
+                    <input type="password" class="cg-form-item-input" placeholder="密码">
+                </div>
+                <div class="login-warn">请输入正确的密码</div>
+                <div class="login-btn-group">
+                    <div class="cg-login-btn">立即登录</div>
+                </div>
+            </div>
+        </div>
+    </div>
 <header class="header-v1">
     <!-- S top-main -->
     <div class="top-main">
         <div class="logo1"><a href="index.html"><img src="picture/logo.png" alt=""/></a></div>
 		<a href="#" class="languages"><img src="picture/top_pic2.png" alt=""/></a>
+        <div class="login-btn">
+            登录
+        </div>
 
 
         <div class="top_search"><em></em>
@@ -77,6 +101,12 @@
                         </div>
                     </li><li id="m7" class="m"><h3><a href="LianXiWoMen.html" title="联系我们">联系我们</a></h3>
                         <div class="sub" >
+                            <dl></dl>
+                        </div>
+                    </li>
+                    <li id="m8" class="m ">
+                        <h3><a href="RongYuZhanShi.html" title="荣誉展示">荣誉展示</a></h3>
+                        <div class="sub">
                             <dl></dl>
                         </div>
                     </li>
@@ -152,7 +182,9 @@
                     <li><a href="LianXiWoMen.html"><span>联系我们</span> </a> 
                         <ul></ul>
                     </li>                    
-                
+                    <li><a href="RongYuZhanShi.html"><span>荣誉展示</span> </a>
+                        <ul></ul>
+                    </li>
                 </ul>
                 <div class="closetitle"><img src="picture/nav_bg2.png"></div>
             </div>
