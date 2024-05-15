@@ -1,273 +1,331 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
 
     <title>山东伽次元科技有限责任公司———智视引领者—慧视系统（R&B）助力中小型机械企业数字化转型
     </title>
-	<meta name="Keywords" content="" />
-	<meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
 
-    <link href="css/style.css" rel="stylesheet"/>
-    <link href="css/anim.css" rel="stylesheet"/>
-    <link href="css/slide.css" rel="stylesheet"/>
-    <link href="css/index.css" rel="stylesheet"/>
-    <link href="css/css.css" rel="stylesheet"/>
-	
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/anim.css" rel="stylesheet" />
+    <link href="css/slide.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+
     <script src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.superslide.2.1.1.js">//pc导航</script>
     <script src="js/jquery.caroufredsel.js">//轮显</script>
     <script src="js/jquery.touchswipe.min.js">//轮显</script>
     <script src="js/public.js">//导航</script>
     <script src="js/anim.js">//动画</script>
+    <script src="js/login.js">//登录</script>
 </head>
 
 <body>
-<header class="header-v1">
-    <!-- S top-main -->
-    <div class="top-main">
-        <div class="logo1"><a href="index.html"><img data-src="picture\车辆列表.png" alt=""/></a></div>
-		<a href="#" class="languages"><img src="picture/top_pic2.png" alt=""/></a>
+    <div class="cg-mask">
+        <div class="cg-mask-content">
+            <div class="login-box anim-show">
+                <img src="picture/close.png" class="login-close">
+                <div class="login-title">登录</div>
+                <div class="cg-form-item">
+                    <div class="cg-form-item-label">账号：</div>
+                    <input type="text" class="cg-form-item-input" placeholder="请输入账号">
+                </div>
+                <div class="login-warn">请输入正确的账号</div>
+                <div class="cg-form-item">
+                    <div class="cg-form-item-label">密码：</div>
+                    <input type="password" class="cg-form-item-input" placeholder="密码">
+                </div>
+                <div class="login-warn">请输入正确的密码</div>
+                <div class="login-btn-group">
+                    <div class="cg-login-btn">立即登录</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header-v1">
+        <!-- S top-main -->
+        <div class="top-main">
+            <div class="logo1"><a href="index.html"><img data-src="picture\车辆列表.png" alt="" /></a></div>
+            <a href="#" class="languages"><img src="picture/top_pic2.png" alt="" /></a>
+            <div class="login-btn">
+                登录
+            </div>
 
+            <div class="top_search"><em></em>
 
-        <div class="top_search"><em></em>
-
-            <div class="search_con">
-                <form onSubmit="return checktop(this);" action="#" method="get" name="search"  id="form3">
-                <input class="input1" name="title" value="Search" onFocus="if(value=='Search'){value=''}" onBlur="if(value==''){value='Search'}">
-                <input name="c" type="hidden" value="Index">
-                <input name="a" type="hidden" value="Search">
-                <input type="submit" class="bnts"  value="">
-                </form>
-                <script type="text/javascript">
-                    function checktop(nForm){
-                        if(nForm.title.value=="Search")
-                        {   alert("请填写搜索关键字!");
-                            nForm.title.focus();
-                            return false;
+                <div class="search_con">
+                    <form onSubmit="return checktop(this);" action="#" method="get" name="search" id="form3">
+                        <input class="input1" name="title" value="Search" onFocus="if(value=='Search'){value=''}"
+                            onBlur="if(value==''){value='Search'}">
+                        <input name="c" type="hidden" value="Index">
+                        <input name="a" type="hidden" value="Search">
+                        <input type="submit" class="bnts" value="">
+                    </form>
+                    <script type="text/javascript">
+                        function checktop(nForm) {
+                            if (nForm.title.value == "Search") {
+                                alert("请填写搜索关键字!");
+                                nForm.title.focus();
+                                return false;
+                            }
                         }
-                    }
-                    function checktop_en(nForm){
-                        if(nForm.title.value=="Search")
-                        {   alert("Please fill in the search keywords");
-                            nForm.title.focus();
-                            return false;
+                        function checktop_en(nForm) {
+                            if (nForm.title.value == "Search") {
+                                alert("Please fill in the search keywords");
+                                nForm.title.focus();
+                                return false;
+                            }
                         }
-                    }
-                </script>
+                    </script>
+                </div>
+            </div>
+            <div class="top-main-content"><!-- S nav -->
+                <div class="navBar">
+                    <ul class="nav clearfix">
+                        <li id="m1" class="m on">
+                            <h3><a href="index.html" title="首页">首页</a></h3>
+                        </li>
+                        <li id="m2" class="m ">
+                            <h3><a href="QiYeJianJie.html" title="关于我们">关于我们</a></h3>
+                            <div class="sub" style="display:none">
+                                <dl>
+                                    <dd><a href="QiYeJianJie.html">企业简介</a></dd>
+                                    <dd><a href="ZhaoXianNaShi.html">招贤纳士</a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li id="m4" class="m ">
+                            <h3><a href="news.html" title="资讯中心">资讯中心</a></h3>
+
+                        </li>
+                        <li id="m5" class="m ">
+                            <h3><a href="YanFaZhongXin.html" title="研发中心">研发中心</a></h3>
+
+                        </li>
+                        <li id="m6" class="m ">
+                            <h3><a href="Chanpingongneng.html" title="产品功能">产品功能</a></h3>
+                            <div class="sub">
+                                <dl></dl>
+                            </div>
+                        </li>
+                        <li id="m7" class="m ">
+                            <h3><a href="LianXiWoMen.html" title="联系我们">联系我们</a></h3>
+                            <div class="sub">
+                                <dl></dl>
+                            </div>
+                        </li>
+                        <li id="m8" class="m ">
+                            <h3><a href="RongYuZhanShi.html" title="荣誉展示">荣誉展示</a></h3>
+                            <div class="sub">
+                                <dl></dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <script type="text/javascript"> jQuery(".nav").slide({
+                        type: "menu",
+                        titCell: ".m",
+                        targetCell: ".sub",
+                        effect: "slideDown",
+                        delayTime: 300,
+                        triggerTime: 100,
+                        returnDefault: true
+                    });</script>
+                <!-- E nav-->
             </div>
         </div>
-        <div class="top-main-content"><!-- S nav -->
-            <div class="navBar">
-                <ul class="nav clearfix">
-                    <li id="m1" class="m on"><h3><a href="index.html" title="首页">首页</a></h3></li>
-                    <li id="m2" class="m "><h3><a href="QiYeJianJie.html" title="关于我们">关于我们</a></h3>
-                        <div class="sub" style="display:none">
-                            <dl>
-                                <dd><a href="QiYeJianJie.html">企业简介</a></dd>
-								<dd><a href="ZhaoXianNaShi.html">招贤纳士</a></dd>
-							</dl>
-                        </div>
-                    </li><li id="m4" class="m "><h3><a href="news.html" title="资讯中心">资讯中心</a></h3>
-                        
-                    </li><li id="m5" class="m "><h3><a href="YanFaZhongXin.html" title="研发中心">研发中心</a></h3>
-                        
-                    </li><li id="m6" class="m "><h3><a href="Chanpingongneng.html" title="产品功能">产品功能</a></h3>
-                        <div class="sub" >
-                            <dl></dl>
-                        </div>
-                    </li><li id="m7" class="m "><h3><a href="LianXiWoMen.html" title="联系我们">联系我们</a></h3>
-                        <div class="sub" >
-                            <dl></dl>
-                        </div>
-                    </li>
-				</ul>
+        <!-- E top-main -->
+        <div class="c_l"></div>
+    </header>
+
+
+    <!-- S touch-top-wrapper -->
+    <div class="touch-top">
+        <div class="touch-top-wrapper clearfix">
+            <div class="touch-logo" skinobjectzone="HtmlLogo_1514"><a class="" href="index.html"><img
+                        src="picture/logo伽次元.jpg" /></a></div>
+            <!-- S touch-navigation -->
+            <div class="touch-navigation">
+                <div class="touch-toggle">
+                    <ul>
+                        <li class="touch-toggle-item-last1"><a href="javascript:void(0);">
+                                <div class="login-btn-mobile">
+                                    登录
+                                </div>
+                            </a></li>
+                        <li class="touch-toggle-item-last"><a href="javascript:void(0);" class="drawer-menu"
+                                data-drawer="search_div"><i class="touch-icon-search">
+                                    <span>搜索</span></i></a></li>
+                        <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
+                                data-drawer="drawer-section-menu"><i class="touch-icon-menu">
+                                </i><span>导航</span></a></li>
+                    </ul>
+                </div>
             </div>
-            <script type="text/javascript"> jQuery(".nav").slide({
-                type: "menu",
-                titCell: ".m",
-                targetCell: ".sub",
-                effect: "slideDown",
-                delayTime: 300,
-                triggerTime: 100,
-                returnDefault: true
-            });</script>
-            <!-- E nav-->
-    	</div>
+            <!-- E touch-navigation -->
+        </div>
+        <!-- S touch-top -->
+        <div class="touch-toggle-content touch-top-home">
+            <!--手机搜索begin-->
+            <div class="drawer-section search_div">
+                <div class="search_con"><input name="names" type="text" class="input1" value="Search"
+                        onFocus="if(value=='Search'){value=''}" onBlur="if(value==''){value='Search'}" /><input
+                        type="submit" value="" class="bnt1" />
+                </div>
+            </div>
+            <!--手机搜索end-->
+            <!--手机菜单begin-->
+            <div class="drawer-section drawer-section-menu">
+                <div class="touch-menu" skinobjectzone="menu_2005">
+                    <ul>
+                        <li><a href="index.html"><span>首页</span></a></li>
+
+                        <li><a href="javascript:;"><span>关于我们</span><i class="touch-arrow-down"></i> </a>
+                            <ul>
+                                <li><a href="QiYeJianJie.html"><span>企业简介</span></a></li>
+                                <li><a href="ZhaoXianNaShi.html"><span>招贤纳士</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li> <a href="news.html"><span>资讯中心</span> </a>
+
+                        </li>
+                        <li> <a href="YanFaZhongXin.html"><span>研发中心</span> </a>
+
+                        </li>
+                        <li><a href="Chanpingongneng.html"><span>产品功能</span> </a>
+                            <ul></ul>
+                        </li>
+                        <li><a href="LianXiWoMen.html"><span>联系我们</span> </a>
+                            <ul></ul>
+                        </li>
+                        <li><a href="RongYuZhanShi.html"><span>荣誉展示</span> </a>
+                            <ul></ul>
+                        </li>
+
+                    </ul>
+                    <div class="closetitle"><img src="picture/nav_bg2.png"></div>
+                </div>
+            </div>
+            <!--手机菜单end-->
+
+        </div>
+        <!-- E touch-top -->
     </div>
-    <!-- E top-main -->
-    <div class="c_l"></div>
-</header>
 
+    <div class="touch_bg">&nbsp;</div>
+    <!-- E touch-top-wrapper -->
+    <div class="blank_h">&nbsp;</div>
 
-<!-- S touch-top-wrapper -->
-<div class="touch-top">
-    <div class="touch-top-wrapper clearfix">
-        <div class="touch-logo" skinobjectzone="HtmlLogo_1514"><a class="" href="index.html"><img src="picture/logo伽次元.jpg" /></a></div>
-        <!-- S touch-navigation -->
-        <div class="touch-navigation">
-            <div class="touch-toggle">
-                <ul>
-                    <li class="touch-toggle-item-last"><a href="javascript:void(0);" class="drawer-menu"
-                                                          data-drawer="search_div"><i  class="touch-icon-search">
-                           <span>搜索</span></i></a></li>
-                    <li class="touch-toggle-item-last"><a href="javascript:;" class="drawer-menu"
-                                                          data-drawer="drawer-section-menu"><i  class="touch-icon-menu">
-                           </i><span>导航</span></a></li>
-                </ul>
+    <script type="text/javascript" src="js/idangerous.swiper-2.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- 轮播 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/10.2.0/swiper-bundle.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/10.2.0/swiper-bundle.js"></script>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <video src="/picture/视频.mp4" controls autoplay width="100%"></video>
             </div>
+            <div class="swiper-slide"> <img src="https://img2.imgtp.com/2024/03/17/iOhR2vZ5.jpg" width="100%"
+                    height="100%" alt="" /></div>
+            <div class="swiper-slide"> <img src="/picture/首页轮播2.jpg" width="100%" height="100%" alt="" /></div>
+            <div class="swiper-slide"> <img src="picture\首页轮播3.jpg" width="100%" height="100%" alt="" /></div>
         </div>
-        <!-- E touch-navigation --></div>
-    <!-- S touch-top -->
-    <div class="touch-toggle-content touch-top-home">
-        <!--手机搜索begin-->
-        <div class="drawer-section search_div">
-            <div class="search_con"><input name="names" type="text" class="input1" value="Search"
-                                           onFocus="if(value=='Search'){value=''}"
-                                           onBlur="if(value==''){value='Search'}"/><input type="submit" value=""
-                                                                                          class="bnt1"/>
-            </div>
-        </div>
-        <!--手机搜索end-->
-        <!--手机菜单begin-->
-        <div class="drawer-section drawer-section-menu">
-            <div class="touch-menu" skinobjectzone="menu_2005">
-                <ul>
-                    <li><a href="index.html"><span>首页</span></a></li>
-                                        
-                    <li><a href="javascript:;"><span>关于我们</span><i class="touch-arrow-down"></i> </a> 
-                        <ul>  
-                            <li><a href="QiYeJianJie.html"><span>企业简介</span></a></li>
-							<li><a href="ZhaoXianNaShi.html"><span>招贤纳士</span></a></li>
-						</ul>
-                    </li>                    
-                       
-                    <li> <a href="news.html"><span>资讯中心</span> </a> 
-                       
-                    </li>                    
-                    <li> <a href="YanFaZhongXin.html"><span>研发中心</span> </a> 
-                        
-                    </li>                    
-                    <li><a href="Chanpingongneng.html"><span>产品功能</span> </a> 
-                        <ul></ul>
-                    </li>                    
-                    <li><a href="LianXiWoMen.html"><span>联系我们</span> </a> 
-                        <ul></ul>
-                    </li>                    
-                
-                </ul>
-                <div class="closetitle"><img src="picture/nav_bg2.png"></div>
-            </div>
-        </div>
-        <!--手机菜单end-->
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
 
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
     </div>
-    <!-- E touch-top -->
-</div>
+    <style>
+        .swiper {
+            width: 100vw;
+            height: 600px;
+        }
 
-<div class="touch_bg">&nbsp;</div>
-<!-- E touch-top-wrapper -->
-<div class="blank_h">&nbsp;</div>
+        @media (max-width: 767px) {
 
-<script type="text/javascript" src="js/idangerous.swiper-2.0.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<!-- 轮播 -->
-<link href="https://cdn.bootcdn.net/ajax/libs/Swiper/10.2.0/swiper-bundle.css" rel="stylesheet">
-<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/10.2.0/swiper-bundle.js"></script>
-<div class="swiper">
-    <div class="swiper-wrapper">
-         <div class="swiper-slide">
-  <video src="/picture/视频.mp4" controls autoplay width="100%"></video>
-</div> 
-        <div class="swiper-slide">   <img src="https://img2.imgtp.com/2024/03/17/iOhR2vZ5.jpg"  width = "100%" height="100%"  alt=""/></div>
-        <div class="swiper-slide"> <img src="/picture/首页轮播2.jpg"   width = "100%" height="100%" alt=""/></div>
-                <div class="swiper-slide"> <img src="picture\首页轮播3.jpg"  width = "100%" height="100%" alt=""/></div>
-    </div>
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
-    
-    <!-- 如果需要导航按钮 -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    
-    <!-- 如果需要滚动条 -->
-    <div class="swiper-scrollbar"></div>
-</div>
-<style>
-  .swiper {
-    width: 100vw;
-    height: 600px;
-}  
-@media (max-width: 767px) {
-  /* 当设备宽度小于等于767px时应用以下样式 */
-  .swiper {
-    height: 200px;
-  }
-}
-</style>
-<script>
-  var mySwiper = new Swiper ('.swiper', {
-    direction: 'horizontal', // 水平切换选项
-    loop: true, // 循环模式选项
-    autoplay: {
-      delay:2000, // 设置每次滚动的间隔时间为3秒
-    },
-
-    // 如果需要分页器
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // 如果需要滚动条
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
-</script>
-<!-- 轮播结束 -->
-<!--产品中心begin-->
-<div class="i_pro_bg2">
-    
-    <div id="owl-demo2" class="owl-carousel anim anim-2">
-   </div>
-    <script src="js/owl.carousel.js"></script>
+            /* 当设备宽度小于等于767px时应用以下样式 */
+            .swiper {
+                height: 200px;
+            }
+        }
+    </style>
     <script>
-        $("#owl-demo2").owlCarousel({
-            items: 3,
-            lazyLoad: true,
-            autoPlay: true,
-            itemsDesktop: [1199, 3],
-            itemsDesktopSmall: [979, 3],
-            itemsTablet: [768, 2],
-            itemsTabletSmall: false,
-            itemsMobile: [479, 2],
-            navigation: true
-        });
+        var mySwiper = new Swiper('.swiper', {
+            direction: 'horizontal', // 水平切换选项
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 2000, // 设置每次滚动的间隔时间为3秒
+            },
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条owl-demo2
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
     </script>
-</div>
-<!--产品中心end-->
-<!--产品功能begin-->
-<div class="i_pro_t anim anim-1" style="bottom:2%;">产品功能</div>
-<div id="owl-demo" class="owl-carousel anim anim-2">
-    <div class="item">
+    <!-- 轮播结束 -->
+    <!--产品中心begin-->
+    <div class="i_pro_bg2">
+
+        <div id="owl-demo2" class="owl-carousel anim anim-2">
+        </div>
+        <script src="js/owl.carousel.js"></script>
+        <script>
+            $("#owl-demo2").owlCarousel({
+                items: 3,
+                lazyLoad: true,
+                autoPlay: true,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 3],
+                itemsTablet: [768, 2],
+                itemsTabletSmall: false,
+                itemsMobile: [479, 2],
+                navigation: true
+            });
+        </script>
+    </div>
+    <!--产品中心end-->
+    <!--产品功能begin-->
+    <div class="i_pro_t anim anim-1" style="bottom:2%;">产品功能</div>
+    <div id="owl-demo" class="owl-carousel anim anim-2">
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture\车辆列表.png" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>车辆列表功能</h4></div>
+            <div class="bg-list-tit">
+                <h4>车辆列表功能</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
                     <div class="bg-list-hs" style=" background:url(images/596747f854a8c.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
-                            <p>用户可直接通过车辆列表管理车辆，重命名等，所有车辆在线，离线状态一目了然，在线就是车辆在进行测试状态，离线就是车辆处于熄火状态，特殊车辆可特别关注。选中车辆点开之后可查看车辆详细信息。</p>
+                            <p>用户可直接通过车辆列表管理车辆，重命名等，所有车辆在线，离线状态一目了然，在线就是车辆在进行测试状态，离线就是车辆处于熄火状态，特殊车辆可特别关注。选中车辆点开之后可查看车辆详细信息。
+                            </p>
                         </div>
                     </div>
                     <div class="bg-list-yew">
@@ -275,18 +333,22 @@
                     </div>
                 </a>
             </div>
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture\轨迹回放.png" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>轨迹回放储存</h4></div>
+            <div class="bg-list-tit">
+                <h4>轨迹回放储存</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
                     <div class="bg-list-hs" style=" background:url(images/5967480a215f3.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
-                            <p>通过轨迹回放功能可以实现车辆全程轨迹回放，录像自动保存，停车10分钟会在地图显示自动停留点，方便企业统计车辆数据，企业也可通过输入时间来实现查看车辆位置，位置信息精确到秒。通过云存储技术，可防止数据丢失。云存储具有高可靠性、高扩展性并易于访问。云存储服务器通过互联网实现了远程访问，用户可以随时随地通过网络访问自己的数据，也为远程端监控提供了便利。</p>
+                            <p>通过轨迹回放功能可以实现车辆全程轨迹回放，录像自动保存，停车10分钟会在地图显示自动停留点，方便企业统计车辆数据，企业也可通过输入时间来实现查看车辆位置，位置信息精确到秒。通过云存储技术，可防止数据丢失。云存储具有高可靠性、高扩展性并易于访问。云存储服务器通过互联网实现了远程访问，用户可以随时随地通过网络访问自己的数据，也为远程端监控提供了便利。
+                            </p>
                         </div>
                     </div>
                     <div class="bg-list-yew">
@@ -294,11 +356,14 @@
                     </div>
                 </a>
             </div>
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture\厂区地图1.jpg" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>厂区地图定制上传</h4></div>
+            <div class="bg-list-tit">
+                <h4>厂区地图定制上传</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
@@ -313,18 +378,23 @@
                     </div>
                 </a>
             </div>
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture\人工智能助手3.jpg" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>人工智能助手</h4></div>
+            <div class="bg-list-tit">
+                <h4>人工智能助手</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
                     <div class="bg-list-hs" style=" background:url(images/5967483f13c1b.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
-                            <p>虚拟助手和语音助手（如Siri、Google Assistant）利用人工智能技术，回答驾驶员、并调动各传感器的感知信息，结合AI为用户进行工作分析，执行任务，并与用户进行自然语言交流，帮助驾驶员缓解工作疲劳感，提高工作效率。并且可为用户提供可靠的运维方案，帮助用户降低维护成本。通过人工智能也可降低作业风险。利用迦次元三现AI可视化系统可对作业的每一流程的风险系数进行评估分析，从而为操作人员提供更合适的作业方案，降低作业人员的风险系数。</p>
+                            <p>虚拟助手和语音助手（如Siri、Google
+                                Assistant）利用人工智能技术，回答驾驶员、并调动各传感器的感知信息，结合AI为用户进行工作分析，执行任务，并与用户进行自然语言交流，帮助驾驶员缓解工作疲劳感，提高工作效率。并且可为用户提供可靠的运维方案，帮助用户降低维护成本。通过人工智能也可降低作业风险。利用迦次元三现AI可视化系统可对作业的每一流程的风险系数进行评估分析，从而为操作人员提供更合适的作业方案，降低作业人员的风险系数。
+                            </p>
                         </div>
                     </div>
                     <div class="bg-list-yew">
@@ -332,18 +402,22 @@
                     </div>
                 </a>
             </div>
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture\大屏生产.png" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>大屏生产全流程显示</h4></div>
+            <div class="bg-list-tit">
+                <h4>大屏生产全流程显示</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
                     <div class="bg-list-hs" style=" background:url(images/59674853c7a54.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
-                            <p>车辆生产进度，测试状态，以及生产线实时情况，全部云同步到大屏、PC端、手机APP端。使其生产及操作全过程透明化，数据可视化。以便企业通过全程可视化获得机械设备浪费的存在点，消除瓶颈 ,缩短交付时间，提高产能。</p>
+                            <p>车辆生产进度，测试状态，以及生产线实时情况，全部云同步到大屏、PC端、手机APP端。使其生产及操作全过程透明化，数据可视化。以便企业通过全程可视化获得机械设备浪费的存在点，消除瓶颈
+                                ,缩短交付时间，提高产能。</p>
                         </div>
                     </div>
                     <div class="bg-list-yew">
@@ -351,11 +425,14 @@
                     </div>
                 </a>
             </div>
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture/59326712c6242.jpg" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>数据分析</h4></div>
+            <div class="bg-list-tit">
+                <h4>数据分析</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
@@ -363,7 +440,7 @@
                     <div class="bg-list-hs" style=" background:url(images/59674ac4a4246.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
                             <p>为了方便企业统计车辆数据，我们专门研发的数据分析功能，包括里程统计，离线统计，停留统计，测试时间统计等，根据生产数据进行优化，将人工智能嵌入软件，自动配置生产参数，实现更高效的运营，对生产数据进行监测进行问题预警，优化工作流程，提高生产过程的效率和能源利用率，促进设备的节能减排，降低成本。
-</p>
+                            </p>
                         </div>
                     </div>
                     <div class="bg-list-yew">
@@ -371,18 +448,22 @@
                     </div>
                 </a>
             </div>
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture\实时追踪.jpg" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>实时追踪</h4></div>
+            <div class="bg-list-tit">
+                <h4>实时追踪</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
                     <div class="bg-list-hs" style=" background:url(images/59674ad6cf678.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
-                            <p>基于GPS和RFID的实时追踪系统、车辆定位可精确到5米以内。通过我们系统的实时追踪功能，可查看车辆的实时位置，位置每2-5秒上传一次，也可查看车辆在哪个测试环节或装配环节，通过查看车辆离线在线状态可以知道车辆是否启动（点熄火监测），如果启动处于启动状态可以知道车辆动车时间也就是点火时间。</p>
+                            <p>基于GPS和RFID的实时追踪系统、车辆定位可精确到5米以内。通过我们系统的实时追踪功能，可查看车辆的实时位置，位置每2-5秒上传一次，也可查看车辆在哪个测试环节或装配环节，通过查看车辆离线在线状态可以知道车辆是否启动（点熄火监测），如果启动处于启动状态可以知道车辆动车时间也就是点火时间。
+                            </p>
                         </div>
                     </div>
                     <div class="bg-list-yew">
@@ -390,18 +471,22 @@
                     </div>
                 </a>
             </div>
-        </div><div class="item">
+        </div>
+        <div class="item">
             <div class="bg-list-img">
                 <a href="javascript:void(0)"><img class="lazyOwl" data-src="picture\天气预测.jpg" alt=""></a>
             </div>
-            <div class="bg-list-tit"><h4>天气预测显示</h4></div>
+            <div class="bg-list-tit">
+                <h4>天气预测显示</h4>
+            </div>
             <label class="bg-list-more"></label>
 
             <div class="i_pro_bg">
                 <a href="javascript:void(0)">
                     <div class="bg-list-hs" style=" background:url(images/59674aa856e5e.png) center top no-repeat;">
                         <div class="bg-list-sub-hs">
-                            <p>基于GPS、雷达的监测功能，向用户发送天气变化的实时通知，以便用户及时了解重要的气象信息，通过人工智能的数据计算，可以告知用户根恶劣天气对设备的影响，提前安排维护计划，降低设备故障的风险并且进行智能调度，降低能源消耗。</p>
+                            <p>基于GPS、雷达的监测功能，向用户发送天气变化的实时通知，以便用户及时了解重要的气象信息，通过人工智能的数据计算，可以告知用户根恶劣天气对设备的影响，提前安排维护计划，降低设备故障的风险并且进行智能调度，降低能源消耗。
+                            </p>
                         </div>
                     </div>
                     <div class="bg-list-yew">
@@ -409,328 +494,561 @@
                     </div>
                 </a>
             </div>
-        </div></div>
-<script>
-    $("#owl-demo").owlCarousel({
-        items: 5,
-        lazyLoad: true,
-        itemsDesktop: [1600, 4],
-        itemsDesktopSmall: [1279, 3],
-        itemsTablet: [768, 2],
-        itemsMobile: [479, 2],
-        autoPlay: true,
-        navigation: true
-    });
-</script>
-<!--产品功能end-->
-<!--关于我们begin-->
-<div class="i_about">
-    <div class="i_about_t anim anim-1">关于我们</div>
-    <div class="i_about_con">
-        <div class="imgs anim anim-2">
-            <img src="picture\图片1.png"/>
         </div>
-        <div class="i_about_r anim anim-3">
-            <div class="i_about_txt">
-<p style="text-indent:37px">本团队规划成立山东伽次元科技有限责任公司，公司定位于为各类工程机械生产的中小企业、部分离散生产企业提供设备实时数据采集，资产性能管理，产品生命周期管理，智能服务，大数据分析与人工智能服务，从而为整个工业价值链贡献价值，并赋予全行业生态体系灵活敏捷的工业能力。为客户提供综合数字化，可视化解决方案。本系统在工程机械生产测试过程中，对处于生产，测试过程工程车辆进行实时监控生产进度，对车辆位置进行实时跟踪，并对生产数据进行分析，实现了对生产企业的降本增效。目前有山潘机械在内的多家企业表达了明确的购买意向与合作意向……</p>
-            </div>
-
-
-
-        <div class="c_l"></div>
     </div>
-</div>
-<!--关于我们end-->
-<!--资讯中心begin-->
-<div class="i_news_bg">
-    <div class="i_about_t anim anim-1">资讯中心</div>
-    <div class="i_news_a anim anim-2">
+    <script>
+        $("#owl-demo").owlCarousel({
+            items: 5,
+            lazyLoad: true,
+            itemsDesktop: [1600, 4],
+            itemsDesktopSmall: [1279, 3],
+            itemsTablet: [768, 2],
+            itemsMobile: [479, 2],
+            autoPlay: true,
+            navigation: true
+        });
+    </script>
+    <!--产品功能end-->
+    <!-- 证书滚动begin -->
+    <style>
+        .swiper-cer {
+            width: 100vw;
+            height: 600px;
+        }
 
-        <a href="javascript:void(0)" j class="osel">问题咨询</a>
+        .cer-item {
+            transition-timing-function: linear !important;
+        }
 
-        <a href="javascript:void(0)">新闻动态</a>
+        .swiper-cer .swiper-slide {
+            /* background-color: rgba(195, 13, 35, 1); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    </div>
-    <div class="i_news_con anim anim-3">
-        <div class="i_news_div" style="display:block;">
-            <!--问题咨询begin-->
-            <div id="owl-demo3" class="owl-carousel">
-                                <div class="item">
-                    <dd class="not-animated">
-                        <div class="i_news_l">
-                            <ul>
-                                <li>
-                                        <a href="news-qian.html">
-                                            <div class="four_date"><b>18</b>2024-02</div>
-                                            <div class="four_txt">
-                                                <h2>售前服务咨询</h2>
-                                                <p>
-                                                    &nbsp; &nbsp;&nbsp; &nbsp;在公司的售前服务中，将为顾客提供产品信息和15天免费样机系统试用服务，同时贴心地解答客户对于产品的疑问，并且将客户需求及时有效的反馈给上来，为其量身解决需求问题。从某种意义上来讲，我们已经把售前服务作为营销策略的一部分，因为我们很难得到与订货商直接接触的机会，那么售前的产品沟通和试用，是我们这边打开市场的一次契机。                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
+        @media (max-width: 767px) {
 
+            /* 当设备宽度小于等于767px时应用以下样式 */
+            .swiper-cer {
+                height: 200px;
+            }
+        }
+    </style>
+    <div class="cg-cer">
+        <div class="i_pro_t anim anim-1" style="bottom:2%;">项目成果</div>
 
-
-
-                                    <li>
-                                        <a href="news-zhong.html">
-                                            <div class="four_date"><b>18</b>2024-02</div>
-                                            <div class="four_txt">
-                                                <h2>售中管理咨询</h2>
-                                                <p>
-                                                    &nbsp; &nbsp;&nbsp; &nbsp;售中服务作为展示我们公司产品系统的试验场，也是最好的战场，由于在这个阶段我们会有实际的系统展示，所以系统特点展示会更加地充分。同时各种个性化服务的提供，无疑会优化系统的使用体验，为市场开拓夯实基础。                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-
-
+        <div class="swiper-cer swiper">
+            <div class="swiper-wrapper cer-item">
 
 
-                                    <li>
-                                        <a href="news-hou.html">
-                                            <div class="four_date"><b>18</b>2017-02</div>
-                                            <div class="four_txt">
-                                                <h2>售后服务咨询</h2>
-                                                <p>
-                                                    &nbsp; &nbsp;&nbsp; &nbsp;在售后服务中，公司将首先进行“15天使用体验”调查，及时根据用户反馈的信息，对产品系统进行测试、评估以及改进，完善产品系统的性能。其次本公司提供一年保修服务，这既是对产品质量的信心，也是对用户负责的体现。在出现设备故障后，如果是简单问题，我们会采取自助式远程售后服务的方式，为产品提供贴心的产品技术指导以及操作示范，解决故障。如果出现严重问题，我们工作人员会进行记录并由专业的技术人员上门维修。                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
+                <div class="swiper-slide">
+                    <img src="./picture/1.jpg" width="100%" height="100%" alt="" />
+                    <!-- <img src="./picture/2.jpg" width="33%" height="100%" alt="" />
+                    <img src="./picture/3.jpg" width="33%" height="100%" alt="" /> -->
+                </div>
+                <div class="swiper-slide">
 
+                    <img src="./picture/2.jpg" width="100%" height="100%" alt="" />
 
+                </div>
+                <div class="swiper-slide">
 
+                    <img src="./picture/3.jpg" width="100%" height="100%" alt="" />
 
-                                                                        </ul>
-                                    </div>
+                </div>
+                <div class="swiper-slide">
 
-                                    <a href="news-hou.html">
-                                            <div class="imgs"><img src="picture/服务流程.png" alt="">
+                    <img src="./picture/4.jpg" width="100%" height="100%" alt="" />
 
-                                                <h2><em>2024-02-18</em>产品服务战略</h2></div>
-                                        </a>                                </dd>
-                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/5.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/6.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/7.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/8.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/9.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/10.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/11.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/12.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/13.jpg" width="100%" height="100%" alt="" />
+                </div>
+                <!-- <div class="swiper-slide">
+                    <img src="./picture/4.jpg" width="33%" height="100%" alt="" />
+                    <img src="./picture/5.jpg" width="33%" height="100%" alt="" />
+                    <img src="./picture/6.jpg" width="33%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/7.jpg" width="33%" height="100%" alt="" />
+                    <img src="./picture/8.jpg" width="33%" height="100%" alt="" />
+                    <img src="./picture/9.jpg" width="33%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./picture/10.jpg" width="33%" height="100%" alt="" />
+                    <img src="./picture/11.jpg" width="33%" height="100%" alt="" />
+                    <img src="./picture/12.jpg" width="33%" height="100%" alt="" />
+                </div>
+                <div class="swiper-slide"> <img src="./picture/13.jpg" width="auto" height="100%" alt="" /></div> -->
 
             </div>
-            <script>
-                $("#owl-demo3").owlCarousel({
-                    items: 1,
-                    lazyLoad: true,
-                    itemsDesktop: [1600, 1],
-                    itemsDesktopSmall: [1279, 1],
-                    itemsTablet: [768, 1],
-                    itemsMobile: [479, 1],
-                    autoPlay: true,
-                    navigation: true
-                });
-            </script>
-            <!--问题咨询end-->
+            <!-- 如果需要分页器 -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        <div class="i_news_div">
-            <!--新闻动态begin-->
-            <div id="owl-demo4" class="owl-carousel">
-                                <div class="item">
-                    <dd class="not-animated">
-                        <div class="i_news_l">
-                            <ul>
-                                <li>
-                                        <a href="news-con.html">
-                                            <div class="four_date"><b>20</b>2022-02</div>
-                                            <div class="four_txt">
-                                                <h2>战略合作</h2>
-                                                <p>
-                                                    &nbsp; &nbsp;&nbsp; &nbsp;本团队已与聊城镝科信息科技展开技术上的合作，与深圳安耐特技术公司展开代工合作，代工生产本公司硬件设施包括RFID设备，GPS设备。在公司发展前期会加急与上述公司的合作。                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
+    </div>
+
+    <script>
+
+
+        var mySwiper = new Swiper('.swiper-cer', {
+            direction: 'horizontal', // 水平切换选项
+            loop: true, // 循环模式选
+            slidesPerView: window.innerWidth < 767 ? 1 : 3,//显示数量
+            speed: 1000,//切换速度
+            spaceBetween: 120,//间隔
+            loopedSlides: 2,
+            autoplay: {
+                autoplay: true,
+                delay: 0, //自动切换的时间间隔
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true, //鼠标置于swiper时暂停自动切换，鼠标离开时恢复自动切换。
+                // waitForTransition: false,
+
+
+
+            },
+
+            // loopFillGroupWithBlank: true,
+            // normalizeSlideIndex: true,
+            // freeMode: true,
+            // freeMode:true,//自动贴合
+            // 如果需要分页器
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+            // mousewheelControl: true,
+            // // 如果需要前进后退按钮
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // // 如果需要滚动条
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        })
+        // var mySwiper = new Swiper('.swiper-cer', {
+        // 	observer: true,  //开启动态检查器，监测swiper和slide
+        // 	observeParents: true,  //监测Swiper 的祖/父元素
+        // 	speed: 6000,//切换速度
+        // 	loop:true,//循环
+        // 	slidesPerView:3,//显示数量
+        // 	spaceBetween:0,//间隔
+        // 	freeMode:true,//自动贴合
+        // 	autoplay: {//自动播放
+        // 		delay: 1220,//自动切换的时间间隔
+        // 		stopOnLastSlide: false,//切换到最后一个slide时停止自动切换
+        // 		disableOnInteraction: false,//用户操作后是否停止
+        // 	},
+        // 	breakpoints: { 
+        // 	750: {  //当屏幕宽度大于等于320
+        // 	  slidesPerView: 1,
+        // 	},
+        // 	}
+        // });
+
+        mySwiper.el.onmouseover = function () {
+            console.log('1', 1);
+            mySwiper.autoplay.stop();
+        }
+        mySwiper.el.onmouseout = function () {
+            mySwiper.autoplay.start();
+        }
+        // 监听窗口大小变化
+        window.addEventListener('resize', function () {
+            // 当窗口宽度小于600px时，设置Swiper参数
+            if (window.innerWidth < 767) {
+                mySwiper.params.slidesPerView = 1;
+                mySwiper.update();
+                // 其他需要变更的参数...
+            } else {
+                mySwiper.params.slidesPerView = 3;
+                mySwiper.update();
+                // 其他需要变更的参数...
+            }
+        });
+    </script>
+    <!-- 证书滚动end -->
+    <!--关于我们begin-->
+    <div class="i_about">
+        <div class="i_about_t anim anim-1">关于我们</div>
+        <div class="i_about_con">
+            <div class="imgs anim anim-2">
+                <img src="picture\图片1.png" />
+            </div>
+            <div class="i_about_r anim anim-3">
+                <div class="i_about_txt">
+                    <p style="text-indent:37px">
+                        本团队规划成立山东伽次元科技有限责任公司，公司定位于为各类工程机械生产的中小企业、部分离散生产企业提供设备实时数据采集，资产性能管理，产品生命周期管理，智能服务，大数据分析与人工智能服务，从而为整个工业价值链贡献价值，并赋予全行业生态体系灵活敏捷的工业能力。为客户提供综合数字化，可视化解决方案。本系统在工程机械生产测试过程中，对处于生产，测试过程工程车辆进行实时监控生产进度，对车辆位置进行实时跟踪，并对生产数据进行分析，实现了对生产企业的降本增效。目前有山潘机械在内的多家企业表达了明确的购买意向与合作意向……
+                    </p>
+                </div>
+
+
+
+                <div class="c_l"></div>
+            </div>
+        </div>
+        <!--关于我们end-->
+        <!--资讯中心begin-->
+        <div class="i_news_bg">
+            <div class="i_about_t anim anim-1">资讯中心</div>
+            <div class="i_news_a anim anim-2">
+
+                <a href="javascript:void(0)" j class="osel">问题咨询</a>
+
+                <a href="javascript:void(0)">新闻动态</a>
+
+            </div>
+            <div class="i_news_con anim anim-3">
+                <div class="i_news_div" style="display:block;">
+                    <!--问题咨询begin-->
+                    <div id="owl-demo3" class="owl-carousel">
+                        <div class="item">
+                            <dd class="not-animated">
+                                <div class="i_news_l">
+                                    <ul>
+                                        <li>
+                                            <a href="news-qian.html">
+                                                <div class="four_date"><b>18</b>2024-02</div>
+                                                <div class="four_txt">
+                                                    <h2>售前服务咨询</h2>
+                                                    <p>
+                                                        &nbsp; &nbsp;&nbsp;
+                                                        &nbsp;在公司的售前服务中，将为顾客提供产品信息和15天免费样机系统试用服务，同时贴心地解答客户对于产品的疑问，并且将客户需求及时有效的反馈给上来，为其量身解决需求问题。从某种意义上来讲，我们已经把售前服务作为营销策略的一部分，因为我们很难得到与订货商直接接触的机会，那么售前的产品沟通和试用，是我们这边打开市场的一次契机。
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
 
 
 
 
-                                    <li>
-                                        <a href="news-con.html">
-                                            <div class="four_date"><b>29</b>2022-07</div>
-                                            <div class="four_txt">
-                                                <h2>产品应用</h2>
-                                                <p>
-                                                    &nbsp; &nbsp;&nbsp; &nbsp;本团队已与山潘机械签订产品试用合同，并且已经在此公司展开测试和试运行。并出具了产品试用报告，本产品满足该企业的实际需要，帮助其提高了产能，降低了运营成本，缩短了交付时间。                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
+                                        <li>
+                                            <a href="news-zhong.html">
+                                                <div class="four_date"><b>18</b>2024-02</div>
+                                                <div class="four_txt">
+                                                    <h2>售中管理咨询</h2>
+                                                    <p>
+                                                        &nbsp; &nbsp;&nbsp;
+                                                        &nbsp;售中服务作为展示我们公司产品系统的试验场，也是最好的战场，由于在这个阶段我们会有实际的系统展示，所以系统特点展示会更加地充分。同时各种个性化服务的提供，无疑会优化系统的使用体验，为市场开拓夯实基础。
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
 
 
 
 
-                                    <li>
-                                        <a href="news-con.html">
-                                            <div class="four_date"><b>27</b>2023-12</div>
-                                            <div class="four_txt">
-                                                <h2>厂房设备</h2>
-                                                <p>
-                                                    &nbsp; &nbsp;&nbsp; &nbsp;考虑到行业特点，及厂房设备的闲置成本比较高，本公司决定前三年暂不构建厂房及提取加工设备，而是选择委托加工方式（外包）。这样既能减少固定资产投资，又能有效地降低经营风险，同时也能有效地控制资源的浪费。                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
+                                        <li>
+                                            <a href="news-hou.html">
+                                                <div class="four_date"><b>18</b>2017-02</div>
+                                                <div class="four_txt">
+                                                    <h2>售后服务咨询</h2>
+                                                    <p>
+                                                        &nbsp; &nbsp;&nbsp;
+                                                        &nbsp;在售后服务中，公司将首先进行“15天使用体验”调查，及时根据用户反馈的信息，对产品系统进行测试、评估以及改进，完善产品系统的性能。其次本公司提供一年保修服务，这既是对产品质量的信心，也是对用户负责的体现。在出现设备故障后，如果是简单问题，我们会采取自助式远程售后服务的方式，为产品提供贴心的产品技术指导以及操作示范，解决故障。如果出现严重问题，我们工作人员会进行记录并由专业的技术人员上门维修。
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
 
 
 
 
                                     </ul>
-                        </div>
-                        <a href="news-con.html">
-                            <div class="imgs"><img src="picture/战略合作.png" alt="">
+                                </div>
 
-                                <h2><em>2017-06-03</em>产品的战略合作合同及产品应用</h2></div>
-                        </a>
-                    </dd>
+                                <a href="news-hou.html">
+                                    <div class="imgs"><img src="picture/服务流程.png" alt="">
+
+                                        <h2><em>2024-02-18</em>产品服务战略</h2>
+                                    </div>
+                                </a>
+                            </dd>
+                        </div>
+
+                    </div>
+                    <script>
+                        $("#owl-demo3").owlCarousel({
+                            items: 1,
+                            lazyLoad: true,
+                            itemsDesktop: [1600, 1],
+                            itemsDesktopSmall: [1279, 1],
+                            itemsTablet: [768, 1],
+                            itemsMobile: [479, 1],
+                            autoPlay: true,
+                            navigation: true
+                        });
+                    </script>
+                    <!--问题咨询end-->
                 </div>
-                <div class="item">
-                    <dd class="not-animated">
-                        <div class="i_news_l">
-                            <ul><li>
-                                        <a href="news-con.html">
-                                            <div class="four_date"><b>18</b>2024-02</div>
-                                            <div class="four_txt">
-                                                <h2>系统产品主要适用范围</h2>
-                                                <p>
-                                                    &nbsp; &nbsp;&nbsp; &nbsp;本系统现主要支持工程机械七大门类中的挖掘机械，压实机械，路面机械，铲土运输机械等大多数工程机械，为工程机械企业提供线上装配线下测试环节全流程可视化的一对一个性化定制服务，为客户企业提高产能，查找浪费点，提高核心竞争力。在后续系统升级中会继续扩展系统适应范围。                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
+                <div class="i_news_div">
+                    <!--新闻动态begin-->
+                    <div id="owl-demo4" class="owl-carousel">
+                        <div class="item">
+                            <dd class="not-animated">
+                                <div class="i_news_l">
+                                    <ul>
+                                        <li>
+                                            <a href="news-con.html">
+                                                <div class="four_date"><b>20</b>2022-02</div>
+                                                <div class="four_txt">
+                                                    <h2>战略合作</h2>
+                                                    <p>
+                                                        &nbsp; &nbsp;&nbsp;
+                                                        &nbsp;本团队已与聊城镝科信息科技展开技术上的合作，与深圳安耐特技术公司展开代工合作，代工生产本公司硬件设施包括RFID设备，GPS设备。在公司发展前期会加急与上述公司的合作。
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
 
 
 
 
-                                                                </ul>
+                                        <li>
+                                            <a href="news-con.html">
+                                                <div class="four_date"><b>29</b>2022-07</div>
+                                                <div class="four_txt">
+                                                    <h2>产品应用</h2>
+                                                    <p>
+                                                        &nbsp; &nbsp;&nbsp;
+                                                        &nbsp;本团队已与山潘机械签订产品试用合同，并且已经在此公司展开测试和试运行。并出具了产品试用报告，本产品满足该企业的实际需要，帮助其提高了产能，降低了运营成本，缩短了交付时间。
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+
+                                        <li>
+                                            <a href="news-con.html">
+                                                <div class="four_date"><b>27</b>2023-12</div>
+                                                <div class="four_txt">
+                                                    <h2>厂房设备</h2>
+                                                    <p>
+                                                        &nbsp; &nbsp;&nbsp;
+                                                        &nbsp;考虑到行业特点，及厂房设备的闲置成本比较高，本公司决定前三年暂不构建厂房及提取加工设备，而是选择委托加工方式（外包）。这样既能减少固定资产投资，又能有效地降低经营风险，同时也能有效地控制资源的浪费。
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+
+
+
+                                    </ul>
+                                </div>
+                                <a href="news-con.html">
+                                    <div class="imgs"><img src="picture/战略合作.png" alt="">
+
+                                        <h2><em>2017-06-03</em>产品的战略合作合同及产品应用</h2>
+                                    </div>
+                                </a>
+                            </dd>
                         </div>
+                        <div class="item">
+                            <dd class="not-animated">
+                                <div class="i_news_l">
+                                    <ul>
+                                        <li>
+                                            <a href="news-con.html">
+                                                <div class="four_date"><b>18</b>2024-02</div>
+                                                <div class="four_txt">
+                                                    <h2>系统产品主要适用范围</h2>
+                                                    <p>
+                                                        &nbsp; &nbsp;&nbsp;
+                                                        &nbsp;本系统现主要支持工程机械七大门类中的挖掘机械，压实机械，路面机械，铲土运输机械等大多数工程机械，为工程机械企业提供线上装配线下测试环节全流程可视化的一对一个性化定制服务，为客户企业提高产能，查找浪费点，提高核心竞争力。在后续系统升级中会继续扩展系统适应范围。
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
 
-                        <a href="news-con.html">
+
+
+
+                                    </ul>
+                                </div>
+
+                                <a href="news-con.html">
                                     <div class="imgs"><img src="picture/5934f42d3b2c2.jpg" alt="">
 
-                                        <h2><em>2024-02-19</em>产品的主要应用范围</h2></div>
-                                </a>                    </dd>
+                                        <h2><em>2024-02-19</em>产品的主要应用范围</h2>
+                                    </div>
+                                </a>
+                            </dd>
+                        </div>
+
+
+                    </div>
+                    <script>
+                        $("#owl-demo4").owlCarousel({
+                            items: 1,
+                            lazyLoad: true,
+                            itemsDesktop: [1600, 1],
+                            itemsDesktopSmall: [1279, 1],
+                            itemsTablet: [768, 1],
+                            itemsMobile: [479, 1],
+                            autoPlay: true,
+                            navigation: true
+                        });
+                    </script>
+                    <!--行业资讯end-->
                 </div>
-
-
             </div>
-            <script>
-                $("#owl-demo4").owlCarousel({
-                    items: 1,
-                    lazyLoad: true,
-                    itemsDesktop: [1600, 1],
-                    itemsDesktopSmall: [1279, 1],
-                    itemsTablet: [768, 1],
-                    itemsMobile: [479, 1],
-                    autoPlay: true,
-                    navigation: true
-                });
+            <script language="javascript">
+                $('.i_news_a a').hover(function () {
+                    var linum = $(this).index();
+                    $(this).addClass('osel').siblings().removeClass('osel');
+                    $('.i_news_con .i_news_div').eq(linum).show().siblings('.i_news_div').hide()
+                })
             </script>
-            <!--行业资讯end-->
-        </div>
-    </div>
-    <script language="javascript">
-        $('.i_news_a a').hover(function () {
-            var linum = $(this).index();
-            $(this).addClass('osel').siblings().removeClass('osel');
-            $('.i_news_con .i_news_div').eq(linum).show().siblings('.i_news_div').hide()
-        })
-    </script>
 
-</div>
-<!--资讯中心end-->
-<!--服务中心begin-->
-<div class="i_service_bg">
-    <div class="i_about_t anim anim-1">技术中心</div>
-    <em class="anim anim-2">不忘初心，在工程机械智能化系统领域成为领航者</em>
-
-    <div class="i_youshi anim anim-3">
-        <ul>
-            <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="100"><a href="javascript:void(0)"><img src="picture/5934cd00dbe6c.png">研发设备</a></li><li class="fadeInUp animated" data-animate="fadeInUp" data-delay="200"><a href="javascript:void(0)"><img src="picture/5934cce85f4aa.png">研发团队</a></li><li class="fadeInUp animated" data-animate="fadeInUp" data-delay="300"><a href="javascript:void(0)"><img src="picture/5934ccd4a8bf3.png">生产技术</a></li><li class="fadeInUp animated" data-animate="fadeInUp" data-delay="400"><a href="javascript:void(0)"><img src="picture/5934ccb734db5.png">售后服务</a></li>        </ul>
-    </div>
-    <a href="#" class="i_service_more anim anim-4">在线客服</a>
-</div>
-<!--服务中心end-->
-<!--尾部begin-->
-<div class="foot_bg">
-    <div class="foot_con">
-        <div class="foot_con_l">
-            <img src="picture/logo2.png" class="foot_con_logo"/>
-
-            <div class="foot_con_a">
-                <a href="#">首页</a>&nbsp;｜&nbsp;
-                <a href="#">关于我们</a>&nbsp;｜&nbsp;<a href="news.html">资讯中心</a>&nbsp;｜&nbsp;<a href="#">研发中心</a>&nbsp;｜&nbsp;<a href="#">产品功能</a>&nbsp;｜&nbsp;<a href="#">联系我们</a>            </div>
         </div>
-        <div class="foot_con_r">
-            <img src="picture/weixin.jpg"/>
-            <ul>
-                <li><a href="tel:400-xxxx-1238" class="tel">400-xxx-1238</a></li>
-                <li><a href="mailto:sales@xxxxx.com" class="email">sales@xxxxx.com</a></li>
-                <li>山东伽次元科技有限责任公司 Shandong Jiaciyuan Technology Co., Ltd</li>
-            </ul>
-        </div>
-        <div class="c_l"></div>
-    </div>
-    <div class="foot_bg2">
-        <div class="foot_con2">
-            技术支持
-            <div class="footer_fx_r">
+        <!--资讯中心end-->
+        <!--服务中心begin-->
+        <div class="i_service_bg">
+            <div class="i_about_t anim anim-1">技术中心</div>
+            <em class="anim anim-2">不忘初心，在工程机械智能化系统领域成为领航者</em>
+
+            <div class="i_youshi anim anim-3">
                 <ul>
-                    <li class="foot_weixin"><a href="javascript:void(0)"><div class="ewm"><img src="picture/weixin.jpg"></div></a></li>
-                    <li class="foot_qq"><a href="#">&nbsp;</a></li>
-                    <li class="foot_weibo"><a href="javascript:void(0)" class="jiathis_button_tqq">&nbsp;</a></li>
-                    <li class="foot_sinna"><a href="javascript:void(0)" class="jiathis_button_tsina">&nbsp;</a></li>
-
+                    <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="100"><a
+                            href="javascript:void(0)"><img src="picture/5934cd00dbe6c.png">研发设备</a></li>
+                    <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="200"><a
+                            href="javascript:void(0)"><img src="picture/5934cce85f4aa.png">研发团队</a></li>
+                    <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="300"><a
+                            href="javascript:void(0)"><img src="picture/5934ccd4a8bf3.png">生产技术</a></li>
+                    <li class="fadeInUp animated" data-animate="fadeInUp" data-delay="400"><a
+                            href="javascript:void(0)"><img src="picture/5934ccb734db5.png">售后服务</a></li>
                 </ul>
             </div>
-            <script type="text/javascript" src="js/jia.js" charset="utf-8"></script>
-            <style>
-                .jiathis_style .jtico_tqq {
-                    background-position: -80px -64px;
-                }
-
-                .jiathis_style .jtico_tsina {
-                    background-position: -80px -64px;
-                }
-            </style>
-
-            <span class="r">分享到：</span>
+            <a href="#" class="i_service_more anim anim-4">在线客服</a>
         </div>
-    </div>
-</div>
-<a href="javascript:void(0)" class="gotop" onClick="goTop()"></a>
-<!--尾部end-->
-<script language="javascript" src="js/foot.js"></script>
-<!--弹窗begin-->
-<div class="case_bgs">&nbsp;</div>
-<div class="case_tc">
-    <div class="case_divs">
-        <img src="picture/close.png" class="closed"/>
-        <img src="picture/i_pro_img1.jpg" alt="" id="tc_big"/>
+        <!--服务中心end-->
+        <!--尾部begin-->
+        <div class="foot_bg">
+            <div class="foot_con">
+                <div class="foot_con_l">
+                    <img src="picture/logo2.png" class="foot_con_logo" />
 
-        
-    </div>
-</div>
-<script type="text/javascript">
-    $(".closed").click(function () {
-        $(".case_tc").animate({height: "0", top: "270px"});
-        $(".case_bgs").fadeOut();
-        $(".case_tc").fadeOut();
+                    <div class="foot_con_a">
+                        <a href="#">首页</a>&nbsp;｜&nbsp;
+                        <a href="#">关于我们</a>&nbsp;｜&nbsp;<a href="news.html">资讯中心</a>&nbsp;｜&nbsp;<a
+                            href="#">研发中心</a>&nbsp;｜&nbsp;<a href="#">产品功能</a>&nbsp;｜&nbsp;<a href="#">联系我们</a>
+                    </div>
+                </div>
+                <div class="foot_con_r">
+                    <img src="picture/weixin.jpg" />
+                    <ul>
+                        <li><a href="tel:400-xxxx-1238" class="tel">400-xxx-1238</a></li>
+                        <li><a href="mailto:sales@xxxxx.com" class="email">sales@xxxxx.com</a></li>
+                        <li>山东伽次元科技有限责任公司 Shandong Jiaciyuan Technology Co., Ltd</li>
+                    </ul>
+                </div>
+                <div class="c_l"></div>
+            </div>
+            <div class="foot_bg2">
+                <div class="foot_con2">
+                    技术支持
+                    <div class="footer_fx_r">
+                        <ul>
+                            <li class="foot_weixin"><a href="javascript:void(0)">
+                                    <div class="ewm"><img src="picture/weixin.jpg"></div>
+                                </a></li>
+                            <li class="foot_qq"><a href="#">&nbsp;</a></li>
+                            <li class="foot_weibo"><a href="javascript:void(0)" class="jiathis_button_tqq">&nbsp;</a>
+                            </li>
+                            <li class="foot_sinna"><a href="javascript:void(0)" class="jiathis_button_tsina">&nbsp;</a>
+                            </li>
 
-    })
-    $("#owl-demo .item").click(function () {
-        $(".case_txt").find("h2").html($(this).find("h4").html());
-        $(".case_txt").find("p").html($(this).find("p").html());
-        $("#tc_big").attr("src", $(this).find("img").attr("src"))
-        $(".case_bgs").fadeIn();
-        $(".case_tc").fadeIn();
-        $(".case_tc").animate({
-            height: $(".case_tc").find("#tc_big").height() + $(".case_txt").height() + 50,
-            top: $("#owl-demo").offset().top
-        });
+                        </ul>
+                    </div>
+                    <script type="text/javascript" src="js/jia.js" charset="utf-8"></script>
+                    <style>
+                        .jiathis_style .jtico_tqq {
+                            background-position: -80px -64px;
+                        }
+
+                        .jiathis_style .jtico_tsina {
+                            background-position: -80px -64px;
+                        }
+                    </style>
+
+                    <span class="r">分享到：</span>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="gotop" onClick="goTop()"></a>
+        <!--尾部end-->
+        <script language="javascript" src="js/foot.js"></script>
+        <!--弹窗begin-->
+        <div class="case_bgs">&nbsp;</div>
+        <div class="case_tc">
+            <div class="case_divs">
+                <img src="picture/close.png" class="closed" />
+                <img src="picture/i_pro_img1.jpg" alt="" id="tc_big" />
 
 
-    })
-</script>
-<!--弹窗end-->
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".closed").click(function () {
+                $(".case_tc").animate({ height: "0", top: "270px" });
+                $(".case_bgs").fadeOut();
+                $(".case_tc").fadeOut();
+
+            })
+            $("#owl-demo .item").click(function () {
+                $('.cg-mask').show();
+                return
+                $(".case_txt").find("h2").html($(this).find("h4").html());
+                $(".case_txt").find("p").html($(this).find("p").html());
+                $("#tc_big").attr("src", $(this).find("img").attr("src"))
+                $(".case_bgs").fadeIn();
+                $(".case_tc").fadeIn();
+                $(".case_tc").animate({
+                    height: $(".case_tc").find("#tc_big").height() + $(".case_txt").height() + 50,
+                    top: $("#owl-demo").offset().top
+                });
+
+
+            })
+        </script>
+        <!--弹窗end-->
 </body>
+
 </html>
